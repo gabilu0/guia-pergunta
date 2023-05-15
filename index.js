@@ -27,7 +27,7 @@ app.get('/', (request, response) => {
         order:[['id','DESC']] //Ordenando em ordem decrescente 
     })
     .then(perguntas =>{
-        response.render('index', {
+        response.render('../index.ejs', {
             perguntas: perguntas
         })
     })
